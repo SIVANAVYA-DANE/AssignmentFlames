@@ -1,0 +1,18 @@
+const SearchBar = ({setSearchTerm}) => {
+  const handleSearch = event => {
+    setSearchTerm(event.target.value)
+  }
+
+  return (
+    <div className="search-container">
+      <input
+        type="text"
+        placeholder="Search by title, author, or genre..."
+        className="search-bar"
+        onChange={handleSearch}
+      />
+    </div>
+  )
+}
+
+export default SearchBar
